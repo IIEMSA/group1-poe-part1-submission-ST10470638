@@ -22,7 +22,7 @@ public class LoginTest {
         boolean expResult = true;
         boolean result = Login.checkUserName(username);
         assertEquals(expResult, result);
-      
+      //change with first and last name result
       
     }
     @Test

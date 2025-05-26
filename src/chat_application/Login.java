@@ -2,14 +2,13 @@
 //change github 
 package chat_application;
 
-
 public class Login // "=" used to divide code into sections
 {
 
    public static boolean checkUserName(String username) //Start username check ==================
 {
-    if (username.length() <= 5 && username.contains("_")) //if loop useing and to ensure it meets both conditions
-    {
+    if (username.length() <= 5 && username.contains("_")) //if loop using and to ensure it meets both conditions
+    {   
         System.out.println(" ");
         System.out.println("Username successfully captured");
         System.out.println(" ");
@@ -25,7 +24,6 @@ public class Login // "=" used to divide code into sections
     }
 }
  //End of Username Check==================================================================================
-    
     
     
     public static boolean checkPasswordComplexity(String password)  //Password check start =====================
@@ -76,7 +74,6 @@ public class Login // "=" used to divide code into sections
  //Password Check end  =======================================================================
     
     
-    
     public static boolean checkCellPhoneNumber(String cellNum)  // cell num start ================================
 {
     
@@ -97,15 +94,12 @@ public class Login // "=" used to divide code into sections
 //Cellnum check end =============================================================================================
     
     
-    
-    
-    
     public static boolean registerUser(String username, String password)
 {
     boolean validUsername = Login.checkUserName(username);
     boolean validPassword = Login.checkPasswordComplexity(password);
 
-    if (!validUsername) //checks if it isnt formated correctly and outputs println
+    if (!validUsername) //checks if it isnt formatted correctly and outputs println
     {
         System.out.println(" ");
         System.out.println("Username is not correctly formatted. Please ensure that your username contains an underscore and no more than five characters in length.");
@@ -128,7 +122,6 @@ public class Login // "=" used to divide code into sections
     }
 }
 
-
     
     public static boolean loginUser(String loginUsername, String loginPassword) 
 {
@@ -149,7 +142,7 @@ public class Login // "=" used to divide code into sections
     
     public static void returnLoginStatus()
     {
-        if(Register.Checklogin == false)// if the login false prints failed login attemp
+        if(Register.Checklogin == false)// if the login false prints failed login attempt
         {
             System.out.println("Failed login attempt");
         } else // if it works print successful login attempt
